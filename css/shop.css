@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container-shop {
-    background-image: url(/Assets/shop.png);
+    background-image: url("/Assets/shop.png");
     min-height: 100vh;
     background-position: center;
     background-size: cover;
