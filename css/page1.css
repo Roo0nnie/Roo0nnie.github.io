@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-nav {
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("/Assets/home.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex; 
+    margin: 30px 80px;
+}
+.nav h3 {
+    font-size: 40px;
+}
+.logo img {
+    height: 60px;
+}
+.nav-list {
+    display: flex;
+    margin: 20px;
+}
+.nav-link {
+    display: flex;
+}
+.nav-link ul li{
+    display: inline-block;
+    border: 2px solid#212529;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .5s;
+}
+.nav-link ul li:hover {
+    background: #212529;
+}
+.active {
+    background: #212529;
+}
+.nav-icon {
+    display: flex;
+    padding: 40px;
+}
+.nav-link li {
+    margin: 10px 10px;
+}
+.nav-link ul li a {
+    font-weight: 500px;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+}
+.icon-dropdown {
+    margin: 10px 20px;
+}
+.nav-dropdown {
+    margin: 20px;
+}
+.dropdown {
+    border: 2px solid #212529;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.dropdown:hover {
+    background: #fff;
+    border: 2px solid  #fff;
+}
+.brand {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.brand h1 {
+    text-align: center;
+    line-height: 60px;
+}
+.brand button {
+    margin: 2% auto;
+}
+.brand button a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+button.btn.active {
+    color: #fff;
+    border: 2px solid #212529;
+    font-weight: 500;
+    transition: all .5s;
+}
+button.btn.active:hover {
+    color: #fff;
+    background: #212529;
+}
+.modal-body {
+    
+}
