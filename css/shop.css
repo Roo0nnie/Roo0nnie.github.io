@@ -5,10 +5,9 @@
 }
 .container-shop {
     background-image: url("/Assets/shop.png");
-    min-height: 100vh;
+    min-height: 200vh;
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 .shop-nav {
     display: flex;
