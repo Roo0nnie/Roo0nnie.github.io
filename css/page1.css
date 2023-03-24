@@ -15,15 +15,14 @@
     display: flex;
     justify-content: space-between;
 }
-.logo {
-    display: flex; 
-    margin: 30px 80px;
-}
 .nav h3 {
     font-size: 40px;
 }
 .logo img {
-    height: 60px;
+    position: absolute;
+    height: 200px;
+    top: -2.5rem;
+    left: -1.6rem;
 }
 .nav-list {
     display: flex;
