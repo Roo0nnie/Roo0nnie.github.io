@@ -5,7 +5,7 @@
 }
 .container-shop .item {
     height: auto;
-    background: #6C4F3B;
+    background:  #212529;
 }
 .shop-nav {
     display: flex;
@@ -72,7 +72,7 @@ i.fa-sharp.fa-solid.fa-house, .fa-solid.fa-arrow-left {
 .grid-item {
     width: 400px;
     height: auto;
-    background: #fff;
+    background: #e7e2d6;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, .3);
 }
@@ -139,19 +139,36 @@ i.fa-sharp.fa-solid.fa-house, .fa-solid.fa-arrow-left {
 }
 /*product*/
 .shop-box-cover {
-    position: absolute;
-    top: 42rem;
-    height: 70px;
-    width: 50%;
+    height: 40px;
+    width: 40%;
     background: #fff;
     border-radius: 5px;
 }
+.shop-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+.shop-box h6 {
+    transition: .5s;
+
+}
+.shop-box h6:hover {
+    font-size: 1.3rem;
+}
+
 button.btn.buy, button.btn.rent {
     border: 2px solid #212529;
     color:  #212529;
     font-weight: 500;
 }
-button.btn.buy:hover, button.btn.rent:hover {
+button.btn.rent:hover {
+    background: #C4A159;
+    color: #212529;
+    border: 2px solid transparent;   
+}
+button.btn.buy:hover {
     background: #212529;
     color: #fff;
     border: 2px solid transparent;
@@ -180,6 +197,107 @@ section.subscribe-box {
     height: 2.5rem;
     width: 20rem;
 }
+.subscribe button.btn {
+    font-weight: 500;
+    height: 2.5rem;
+    border: 2px solid #fff;
+    color: #212529;
+    border-radius: 2px;
+    background: #fff;
+}
+.subscribe button.btn:hover {
+    background: transparent;
+    color: #fff;   
+}
 .subscribe input.form-group.sub {
     padding-left: 1rem;
-} 
+}
+
+.container-table {
+    width: 100%px;
+    background: #6C4F3B;
+    height: auto;
+}
+.table-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: auto;
+    width: 200px;
+    margin: 3rem;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, .3);
+    background: #B29457;
+    padding: 1rem;
+    
+}
+.img-table-table {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.img-table img {
+    position: absolute;
+    height: 120px;
+    left: -1rem;
+}
+.rate {
+    position: relative;
+    height: 30px;
+    width: 130px;
+    overflow: hidden;
+}
+footer {
+    text-align: center;
+}
+footer i {
+    margin: 0 .3rem 0 .3rem;
+}
+.rate img {
+    height: 90px;
+    position: absolute;
+    bottom: -2rem;
+    left: .2rem;
+}
+.footer-end {
+    min-height: 50vh;
+    background: #212529;
+    font-weight: 200;
+}
+.footer-box {
+    padding: 3rem;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.footer-content h5 {
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+.footer-content span {
+    height: 1px;
+    width: 75%;
+    background: white;
+    margin-top: 3rem;
+}
+.footer-link li {
+    display: inline-block;
+    margin: 3rem 2rem 2rem 2rem;
+}
+.footer-link ul {
+    list-style: none;
+}
+.footer-link ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-content p {
+    width: 50ch;
+}
