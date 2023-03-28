@@ -145,6 +145,19 @@ img.members {
     background: #212529;
     border-radius: 2px;
 }
+input.form-control {
+    border: 2px solid #212529;
+}
+button.btn-primary {
+    background: transparent;
+    color: #212529;
+    border: 2px solid #212529;
+}
+button.btn-primary:hover {
+    background: #212529;
+    color: #fff;
+    border: 2px solid #212529;
+}
 .bi-arrow-right {
     color: #fff;
 } 
