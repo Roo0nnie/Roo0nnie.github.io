@@ -17,8 +17,8 @@
     left: 0;
     right: 0;
     z-index: -1;
-    width: 130%;
-    height: 130%;
+    width: 120%;
+    height: 120%;
 }
 nav {
     display: flex;

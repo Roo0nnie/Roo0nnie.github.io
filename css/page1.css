@@ -62,6 +62,7 @@
 }
 .nav-dropdown {
     margin: 20px;
+    color: white;
 }
 .dropdown {
     border: 2px solid #212529;
@@ -69,8 +70,22 @@
     transition: all .5s;
 }
 .dropdown:hover {
-    background: #fff;
-    border: 2px solid  #fff;
+    background:  #212529;
+    border: 2px solid  #212529;
+}
+.nav-dropdown ul {
+    background:  #212529;
+}
+.nav-dropdown li {
+    transition: .5s;
+    background: #212529;
+}
+.nav-dropdown li a {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .1s;
 }
 .brand {
     display: flex;
