@@ -135,6 +135,9 @@ i.bi.bi-search,i.bi.bi-cart4 {
     width: 300px;
     height: 250px;
 }
+.bi.bi-star-fill,.bi-star-half {
+    color: yellow;
+}
 .product-title {
     font-size: 1.1rem;
     font-weight: 700;
@@ -163,6 +166,8 @@ i.bi.bi-search,i.bi.bi-cart4 {
 .add-cart i:hover {
     background: #C4A159;
 }
+
+
 /*Pagination part*/
 .section-pagination {
     justify-content: center;
@@ -237,12 +242,7 @@ i.bi.bi-search,i.bi.bi-cart4 {
     height: 120px;
     left: -1rem;
 }
-.rate {
-    position: relative;
-    height: 30px;
-    width: 120px;
-    overflow: hidden;
-}
+
 
 /*footer*/
 footer {

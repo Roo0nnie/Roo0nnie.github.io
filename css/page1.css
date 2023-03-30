@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Navigation button*/
 .container-nav {
 	min-height: 100vh;
 	width: 100%;
@@ -32,14 +33,14 @@
 .nav-link {
     display: flex;
 }
-.nav-link ul li{
+.nav-link ul li.home {
     display: inline-block;
     border: 2px solid#212529;
     border-radius: 10px;
     padding: 5px;
     transition: all .5s;
 }
-.nav-link ul li:hover {
+.nav-link ul li.home:hover {
     background: #212529;
 }
 .active {
@@ -49,72 +50,133 @@
     display: flex;
     padding: 40px;
 }
-.nav-link li {
+.nav-link li.home {
     margin: 10px 10px;
 }
-.nav-link ul li a {
+.home-a {
     font-weight: 500px;
     text-decoration: none;
     padding: 20px;
     color: #fff;
 }
-.icon-dropdown {
-    margin: 10px 20px;
-}
-.nav-dropdown {
-    margin: 20px;
-    color: white;
-}
+/*Dropdown*/
 .dropdown {
+    margin-top: -.7rem;
+    font-size: 50px;
+    color: #212529;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+.dropdown-toggle {
     border: 2px solid #212529;
+    background: transparent;
     border-radius: 10px;
-    transition: all .5s;
 }
-.dropdown:hover {
-    background:  #212529;
-    border: 2px solid  #212529;
-}
-.nav-dropdown ul {
-    background:  #212529;
-}
-.nav-dropdown li {
-    transition: .5s;
+.dropdown-toggle:hover {
+    color: #fff;
+    border: 2px solid #212529;
     background: #212529;
 }
-.nav-dropdown li a {
-    text-align: center;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    transition: all .1s;
+/*icon menu*/
+.bi {
+    margin-right: 10px;
 }
+
+/*Login & Sign Up*/
+.modal-dialog {
+    min-width: 100px;
+}
+form.form-control {
+    background: #C4A159;
+    border: none;    
+}
+.modal-content {
+    background: #C4A159;
+}
+.tab-pane{
+    background: #C4A159;
+}
+.justify-content-center {
+    background:  #C4A159;
+}
+a.nav-link {
+    color: #706666;
+    background: none;
+    font-weight: 600; 
+}
+a.nav-link.active {
+    border-bottom: 2px solid;
+    color: #fff;
+    background: none;
+    font-weight: 600;
+}
+nav.d-flex.justify-content-center {
+    margin-bottom: -1rem;
+}
+.sign {
+    border: 2px solid #212529;
+    border-radius: 15px;
+}
+.marg,.check {
+    margin-top: 1rem;
+}
+.submit-color {
+    border-radius: 15px;
+    background: #212529;
+    color: #fff;
+    border: 2px solid #212529;
+    font-weight: 600;
+    width: 10rem;
+}
+.submit-color:hover {
+    border: 2px solid #212529;
+    background: transparent;
+    color: #212529;
+}
+.modal-footer {
+    font-size: 15px;
+}
+.modal-footer a {
+    text-decoration: none;
+}
+
+
+
+
+
+/*Page*/
 .brand {
     display: flex;
-    height: 70vh;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    height: 80vh;
+    justify-content: center;
 }
 .brand h1 {
-    text-align: center;
-    line-height: 60px;
-}
-.brand button {
-    margin: 2% auto;
+    font-size: 5rem;
+    font-weight: 1000;
+    color: #C4A159;
+    -webkit-text-stroke: 2px #212529;
+}   
+.qoutes {
+    width: 70ch;
+    font-weight: 00;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    color:  #fff;
 }
 .brand button a {
     text-decoration: none;
     color: #fff;
     transition: all .5s;
 }
-button.btn.active {
+button.btn.active.get-started {
     font-size: 22px;
     color: #fff;
     border: 2px solid #212529;
     font-weight: 600;
     background: #212529;
 }
-button.btn.active:hover {
+button.btn.active.get-started:hover {
     background: transparent;
     color: #212529;  
 }
