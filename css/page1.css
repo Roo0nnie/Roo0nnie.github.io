@@ -90,6 +90,9 @@ form.form-control {
     background: #C4A159;
     border: none;    
 }
+.modal-header {
+    border: none;
+}
 .modal-content {
     background: #C4A159;
 }
@@ -135,6 +138,7 @@ nav.d-flex.justify-content-center {
 }
 .modal-footer {
     font-size: 15px;
+    border: none;
 }
 .modal-footer a {
     text-decoration: none;

@@ -183,10 +183,16 @@ input.btn:hover {
     background:#e7e2d6;
 }
 .location-img {
+    height: 400px;
     margin: 2rem;
     max-width: 500px;
     overflow: hidden;
     box-shadow: 0 0 15px rgb(0, 0, 0, .5);
+    position: relative;
+}
+.location-img img {
+    position: absolute;
+    top: -22rem;
 }
 .content-description {
     background: #B29457;

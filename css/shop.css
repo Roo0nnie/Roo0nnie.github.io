@@ -113,23 +113,23 @@ i.bi.bi-search,i.bi.bi-cart4 {
     padding-bottom: 3%;
 }
 #description {
-    margin-top: -2rem;
-    font-weight: 200;
+    font-weight: 600;
 }
 .grid-item h6 {
     padding-top: .5rem;
 }
 .grid-item {
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 250px;
     background: #fff;
-    box-shadow: 0 0 15px rgb(0, 0, 0, .3);
+    box-shadow: 0 0 15px rgb(0, 0, 0, .5);
     position: relative;
+    border-radius: 10px;
 }
 .grid-item:hover {
     padding:10px;
     border: 2px solid black;
-    transition: .4s;
+    transition: .5s;
 }
 .product-img {
     width: 300px;
@@ -138,17 +138,12 @@ i.bi.bi-search,i.bi.bi-cart4 {
 .bi.bi-star-fill,.bi-star-half {
     color: yellow;
 }
-.product-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: .5rem;
-    margin-left: .5rem;
-}
 .price {
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-left: .5rem;
-    font-size: 2rem;
+    padding-left: 3.5rem;
+    padding-top: 1.3rem;
+
 }
 .rate,.grid-item h6 {
     margin-left: .5rem;
@@ -161,10 +156,24 @@ i.bi.bi-search,i.bi.bi-cart4 {
     color: #fff;
     padding: 10px;
     cursor: pointer;
-    transition: .5s;
 }
-.add-cart i:hover {
-    background: #C4A159;
+.add-cart-zoom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #212529;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.bi-heart {
+    position: absolute;
+    bottom: 0;
+    left: 2.3rem;
+    background: #212529;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
@@ -198,9 +207,6 @@ i.bi.bi-search,i.bi.bi-cart4 {
     font-size: 2rem;
     color: #212529;  
 }
-
-
-
 
 .container-table {
     width: 100%px;
@@ -305,3 +311,115 @@ button.form-control:hover {
     color: #C4A159;
     font-weight: 700;
 } 
+/*fliptap*/
+
+
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  #thecard1,#thecard17,#thecard18,#thecard19,#thecard20{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  #thecard2,#thecard15,#thecard16,#thecard21,#thecard22{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  #thecard3,#thecard13,#thecard14,#thecard23,#thecard24{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  #thecard4,#thecard11,#thecard12{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  #thecard5,#thecard9,#thecard10{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  #thecard6,#thecard7,#thecard8{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  
+  /* THIS USED TO BE THE PSUEDO CLASS CONTROLS THAT FLIP ON MOUSEOVER AND MOUSEOUT IN CSS */
+  /* BUT NOW THIS CLASS IS BEING CALLED IN JAVASCRIPT WHEN THE CARD IS CLICKED */   
+  .flipper{
+    transform: rotateY(180deg);
+  }
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #C4A159;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront h1, .theback h1{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  .btn.myCart {
+    margin-top: 1.5rem;
+    color: #fff;
+    margin-left: 2rem;
+    font-weight: 600;
+  }
+  .btn.myCart:hover {
+    color: #212529;
+    border: 2px solid #212529;
+  }
+

@@ -63,27 +63,88 @@
                     </tbody>
                 </table>
                 <div class="totalPurchased">
-                            <div class="card-content">Your Total Purchased</div>
-                            <table style="min-width: 400px;">
-                                <tr>
-                                    <td>Cart SubTotal</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <td>Shipping</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <th style="width:50%;">Total</th>
-                                    <th style="width: 50%;">$240</th>
-                                </tr>
-                                
-                            </table>  
-                            <button type="button" class="form-control ckeckout"><a href="#">Shop</a></button>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card-content">Apply Coupon</div>
+                            <div class="row">
+                                <div class="col-sm-8"><input type="text" class="form-control coupon" placeholder="Enter your coupon"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4"><select class="form-select">
+                                    <option selected>Payment Option</option>
+                                    <option value="1">COD</option>
+                                    <option value="2">Online Payment</option>
+                                    <option value="3">Card/Credit</option>
+                                  </select></div>
+                                <div class="col-sm-4">
+                                    <select class="form-select">
+                                        <option selected>Method</option>
+                                        <option value="1">Pick up</option>
+                                        <option value="2">Deliver</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 d-flex justify-content-center"><button type="button" class="form-control apply">Apply</button></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-content">Your Total Purchased</div>
+                                    <table style="min-width: 600px;">
+                                        <tr>
+                                            <td>Cart SubTotal</td>
+                                            <td>$240</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping</td>
+                                            <td>$120</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width:50%;">Total</th>
+                                            <th style="width: 50%;">$240</th>
+                                        </tr>
+                                        
+                                    </table> 
+                                    <button type="button" class="form-control ckeckout" data-bs-toggle="modal" data-bs-target="#checkout"><a href="#">Checkout</a></button>
+                                    <div id="checkout" class="modal fade" data-bs-backdrop="static">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn btn-close btn-sm" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                    <div class="modal-body">
+                                                        <div class="tab-content">
+                                                            <div id="checkout" class="tab-pane active">
+                                                                <div class="content greet" align="center">Thank You!</div>
+                                                                <p align="center" class="greet2">You successfully ordered from us.</p>
+                                                                <div class="row">
+                                                                    <div class="col-sm-12" align="center">
+                                                                        <button type="button" class="form-control checkout-btn" data-bs-dismiss="modal" >OK</button>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <div class="modal-footer"></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                            
+                            
+                            
                 </div>
             </div>
-        </div>
+        
     </section>
 
 </body>
+
 </html>

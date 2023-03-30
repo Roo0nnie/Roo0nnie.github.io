@@ -56,7 +56,7 @@
                         <button type="button" class="btn search"><i class="bi bi-search"></i></button>
                         <button type="button" class="btn position-relative"> <a href="/page/itemPurchased.html"><i class="bi bi-cart4"></i></a>
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                              9
+                              2
                               <span class="visually-hidden"></span>
                             </span>
                         </button>
@@ -76,269 +76,734 @@
                     </nav><!--nav end-->
                     <div class="tab-content"><!--tab content start-->
                         <div id="all" class="tab-pane fade">
-                            <div class="container-box"><!--start of grid-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                    </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                    </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                    </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
-                                <nav aria-label="Page navigation" class="section-pagination" align="center">
-                                    <ul class="pagination">
-                                      <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                          <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                          <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </nav>
+                                <div class="container-box"><!--start of grid-->
+                                    <div class="grid-item"><!--Produt item start-->
+                                        <div id="thecard1"  onclick="myFlipFunction1()">   
+                                            <div class="thefront"><img src="/Assets/tower.jfif" alt="" class="product-img">
+                                                <i class="bi bi-cart4 add-cart"></i>
+                                                <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="theback">
+                                                <h1 id="description">Tower Main </h1>
+                                                <h6 align="center"> Description:</h6>   
+                                                <div class="rate">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                </div>
+                                                    <div class="row ">
+                                                        <div class="col-sm-12 d-flex">
+                                                            <button type="button" class="btn myCart">Add to Cart</button>
+                                                            <div class="price">$120</div>
+                                                        </div>
+                                                    </div>
+                                            </div> 
+                                        </div>
+                                    </div><!--Product item end-->
+                                    <div class="grid-item"><!--Produt item start-->
+                                        <div id="thecard2"  onclick="myFlipFunction2()">   
+                                            <div class="thefront"><img src="/Assets/shop.png" alt="" class="product-img">
+                                                <i class="bi bi-cart4 add-cart"></i>
+                                                <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="theback">
+                                                <h1 id="description">Tower Main </h1>
+                                                <h6 align="center"> Description:</h6>   
+                                                <div class="rate">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                </div>
+                                                    <div class="row ">
+                                                        <div class="col-sm-12 d-flex">
+                                                            <button type="button" class="btn myCart">Add to Cart</button>
+                                                            <div class="price">$120</div>
+                                                        </div>
+                                                    </div>
+                                            </div> 
+                                        </div>
+                                    </div><!--Product item end-->
+
+                                    <div class="grid-item"><!--Produt item start-->
+                                        <div id="thecard3"  onclick="myFlipFunction3()">   
+                                            <div class="thefront"><img src="/Assets/about.png" alt="" class="product-img">
+                                                <i class="bi bi-cart4 add-cart"></i>
+                                                <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="theback">
+                                                <h1 id="description">Tower Main </h1>
+                                                <h6 align="center"> Description:</h6>   
+                                                <div class="rate">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                </div>
+                                                    <div class="row ">
+                                                        <div class="col-sm-12 d-flex">
+                                                            <button type="button" class="btn myCart">Add to Cart</button>
+                                                            <div class="price">$120</div>
+                                                        </div>
+                                                    </div>
+                                            </div> 
+                                        </div>
+                                    </div><!--Product item end-->
+
+                                    <div class="grid-item"><!--Produt item start-->
+                                        <div id="thecard4"  onclick="myFlipFunction4()">   
+                                            <div class="thefront"><img src="/Assets/reflect.jfif" alt="" class="product-img">
+                                                <i class="bi bi-cart4 add-cart"></i>
+                                                <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="theback">
+                                                <h1 id="description">Tower Main </h1>
+                                                <h6 align="center"> Description:</h6>   
+                                                <div class="rate">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                </div>
+                                                    <div class="row ">
+                                                        <div class="col-sm-12 d-flex">
+                                                            <button type="button" class="btn myCart">Add to Cart</button>
+                                                            <div class="price">$120</div>
+                                                        </div>
+                                                    </div>
+                                            </div> 
+                                        </div>
+                                    </div><!--Product item end-->
+
+                                    <div class="grid-item"><!--Produt item start-->
+                                        <div id="thecard5"  onclick="myFlipFunction5()">   
+                                            <div class="thefront"><img src="/Assets/train.png" alt="" class="product-img">
+                                                <i class="bi bi-cart4 add-cart"></i>
+                                                <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="theback">
+                                                <h1 id="description">Tower Main </h1>
+                                                <h6 align="center"> Description:</h6>   
+                                                <div class="rate">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                </div>
+                                                    <div class="row ">
+                                                        <div class="col-sm-12 d-flex">
+                                                            <button type="button" class="btn myCart">Add to Cart</button>
+                                                            <div class="price">$120</div>
+                                                        </div>
+                                                    </div>
+                                            </div> 
+                                        </div>
+                                    </div><!--Product item end-->
+
+                                    <div class="grid-item"><!--Produt item start-->
+                                        <div id="thecard6"  onclick="myFlipFunction6()">   
+                                            <div class="thefront"><img src="/Assets/reflect-tree.jfif" alt="" class="product-img">
+                                                <i class="bi bi-cart4 add-cart"></i>
+                                                <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="theback">
+                                                <h1 id="description">Tower Main </h1>
+                                                <h6 align="center"> Description:</h6>   
+                                                <div class="rate">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                </div>
+                                                    <div class="row ">
+                                                        <div class="col-sm-12 d-flex">
+                                                            <button type="button" class="btn myCart">Add to Cart</button>
+                                                            <div class="price">$120</div>
+                                                        </div>
+                                                    </div>
+                                            </div> 
+                                        </div>
+                                    </div><!--Product item end-->
+                                                        
+                                    <nav aria-label="Page navigation" class="section-pagination" align="center">
+                                        <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        </ul>
+                                    </nav>
                             </div><!--end of grid-->
                         </div>
                         
                         <div id="trend" class="tab-pane fade active"><!--start objective-->
                             <div class="container-box"><!--start of grid-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard19"  onclick="myFlipFunction19()">   
+                                        <div class="thefront"><img src="/Assets/tower.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                </div><!--Product item end-->
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard20"  onclick="myFlipFunction20()">   
+                                        <div class="thefront"><img src="/Assets/shop.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                    </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
+                                </div><!--Product item end-->
 
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard21"  onclick="myFlipFunction21()">   
+                                        <div class="thefront"><img src="/Assets/about.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard22"  onclick="myFlipFunction22()">   
+                                        <div class="thefront"><img src="/Assets/reflect.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard23"  onclick="myFlipFunction23()">   
+                                        <div class="thefront"><img src="/Assets/train.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard24"  onclick="myFlipFunction24()">   
+                                        <div class="thefront"><img src="/Assets/reflect-tree.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+                                                    
                                 <nav aria-label="Page navigation" class="section-pagination" align="center">
                                     <ul class="pagination">
-                                      <li class="page-item">
+                                    <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Previous">
-                                          <span aria-hidden="true">&laquo;</span>
+                                        <span aria-hidden="true">&laquo;</span>
                                         </a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item">
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Next">
-                                          <span aria-hidden="true">&raquo;</span>
+                                        <span aria-hidden="true">&raquo;</span>
                                         </a>
-                                      </li>
+                                    </li>
                                     </ul>
-                                  </nav>
-                            </div><!--end of grid-->
+                                </nav>
+                        </div><!--end of grid-->
                         </div><!--end objective-->
                         <div id="popular" class="tab-pane fade"><!--start member--> 
                             <div class="container-box"><!--start of grid-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard7"  onclick="myFlipFunction7()">   
+                                        <div class="thefront"><img src="/Assets/tower.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                </div><!--Product item end-->
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard8"  onclick="myFlipFunction8()">   
+                                        <div class="thefront"><img src="/Assets/shop.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard9"  onclick="myFlipFunction9()">   
+                                        <div class="thefront"><img src="/Assets/about.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard10"  onclick="myFlipFunction10()">   
+                                        <div class="thefront"><img src="/Assets/reflect.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard11"  onclick="myFlipFunction11()">   
+                                        <div class="thefront"><img src="/Assets/train.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard12"  onclick="myFlipFunction12()">   
+                                        <div class="thefront"><img src="/Assets/reflect-tree.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+                                                    
                                 <nav aria-label="Page navigation" class="section-pagination" align="center">
                                     <ul class="pagination">
-                                      <li class="page-item">
+                                    <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Previous">
-                                          <span aria-hidden="true">&laquo;</span>
+                                        <span aria-hidden="true">&laquo;</span>
                                         </a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item">
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Next">
-                                          <span aria-hidden="true">&raquo;</span>
+                                        <span aria-hidden="true">&raquo;</span>
                                         </a>
-                                      </li>
+                                    </li>
                                     </ul>
-                                  </nav>
-                                </div><!--end of grid-->
+                                </nav>
+                        </div><!--end of grid-->
                             </div>  
                         </div><!--end member-->
                         <div id="lowprice" class="tab-pane fade"><!--start location-->
                             <div class="container-box"><!--start of grid-->
-                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard13"  onclick="myFlipFunction13()">   
+                                        <div class="thefront"><img src="/Assets/tower.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                </div><!--Product item end-->
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard14"  onclick="myFlipFunction14()">   
+                                        <div class="thefront"><img src="/Assets/shop.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->                                <div class="grid-item"><!--start-->
-                                    <img src="/Assets/tower.jfif" alt="" class="product-img">
-                                    <h6 align="center">Tower Main</h6>
-                                    <br>
-                                    <h6 id="description">Description: </h6>
-                                    <div class="rate">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard15"  onclick="myFlipFunction15()">   
+                                        <div class="thefront"><img src="/Assets/about.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
                                     </div>
-                                    <span class="price">$120.00</span>
-                                    <i class="bi bi-cart4 add-cart"></i>
-                                </div><!--end-->
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard16"  onclick="myFlipFunction16()">   
+                                        <div class="thefront"><img src="/Assets/reflect.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard17"  onclick="myFlipFunction17()">   
+                                        <div class="thefront"><img src="/Assets/train.png" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+
+                                <div class="grid-item"><!--Produt item start-->
+                                    <div id="thecard18"  onclick="myFlipFunction18()">   
+                                        <div class="thefront"><img src="/Assets/reflect-tree.jfif" alt="" class="product-img">
+                                            <i class="bi bi-cart4 add-cart"></i>
+                                            <i class="bi bi-arrows-fullscreen add-cart-zoom"></i>
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="theback">
+                                            <h1 id="description">Tower Main </h1>
+                                            <h6 align="center"> Description:</h6>   
+                                            <div class="rate">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+                                                <div class="row ">
+                                                    <div class="col-sm-12 d-flex">
+                                                        <button type="button" class="btn myCart">Add to Cart</button>
+                                                        <div class="price">$120</div>
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
+                                </div><!--Product item end-->
+                                                    
                                 <nav aria-label="Page navigation" class="section-pagination" align="center">
                                     <ul class="pagination">
-                                      <li class="page-item">
+                                    <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Previous">
-                                          <span aria-hidden="true">&laquo;</span>
+                                        <span aria-hidden="true">&laquo;</span>
                                         </a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item">
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Next">
-                                          <span aria-hidden="true">&raquo;</span>
+                                        <span aria-hidden="true">&raquo;</span>
                                         </a>
-                                      </li>
+                                    </li>
                                     </ul>
-                                  </nav>
-                            </div><!--end of grid-->
+                                </nav>
+                        </div><!--end of grid-->
                         </div><!--end lowest price-->
                     </div><!--tab content end-->
                 </div>
@@ -500,7 +965,104 @@
         </footer><!--footer end-->       
 
 
-            
+          <script>
+            function myFlipFunction1() {
+                var myElement = document.getElementById("thecard1");
+                myElement.classList.toggle("flipper");
+             }
+            function myFlipFunction2() {
+               var myElement = document.getElementById("thecard2");
+               myElement.classList.toggle("flipper");
+            }
+            function myFlipFunction3() {
+                var myElement = document.getElementById("thecard3");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction4() {
+                var myElement = document.getElementById("thecard4");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction5() {
+                var myElement = document.getElementById("thecard5");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction6() {
+                var myElement = document.getElementById("thecard6");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction7() {
+                var myElement = document.getElementById("thecard7");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction8() {
+                var myElement = document.getElementById("thecard8");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction9() {
+                var myElement = document.getElementById("thecard9");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction10() {
+                var myElement = document.getElementById("thecard10");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction11() {
+                var myElement = document.getElementById("thecard11");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction12() {
+                var myElement = document.getElementById("thecard12");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction13() {
+                var myElement = document.getElementById("thecard13");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction14() {
+                var myElement = document.getElementById("thecard14");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction15() {
+                var myElement = document.getElementById("thecard15");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction16() {
+                var myElement = document.getElementById("thecard16");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction17() {
+                var myElement = document.getElementById("thecard17");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction18() {
+                var myElement = document.getElementById("thecard18");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction19() {
+                var myElement = document.getElementById("thecard19");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction20() {
+                var myElement = document.getElementById("thecard20");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction21() {
+                var myElement = document.getElementById("thecard21");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction22() {
+                var myElement = document.getElementById("thecard22");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction23() {
+                var myElement = document.getElementById("thecard23");
+                myElement.classList.toggle("flipper");
+             }
+             function myFlipFunction24() {
+                var myElement = document.getElementById("thecard24");
+                myElement.classList.toggle("flipper");
+             }
+            </script>      
             
 
 

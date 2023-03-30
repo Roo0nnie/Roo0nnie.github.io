@@ -38,15 +38,15 @@
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item drop" href="/page/shop-page.html"><i class="bi bi-cart-plus"></i></i>Buy item</i></a></li>
                           <li><a class="dropdown-item drop" href="#"><i class="bi bi-basket"></i>Sell item</a></li>
-                          <li><a class="dropdown-item drop" href="#"><i class="bi bi-plus-square"></i>Sign Up</a></li>
-                          <li><a class="dropdown-item drop" href="#"><i class="bi bi-box-arrow-in-right"></i>Login</a></li>
+                          <li><a class="dropdown-item drop" href="#" data-bs-toggle="modal" data-bs-target="#Signup"><i class="bi bi-plus-square"></i>Sign Up</a></li>
+                          <li><a class="dropdown-item drop" href="#" data-bs-toggle="modal" data-bs-target="#Loginonly"><i class="bi bi-box-arrow-in-right"></i>Login</a></li>
                           <li><a class="dropdown-item drop" href="#"><i class="bi bi-box-arrow-left"></i>Logout</a></li>
                           <li><a class="dropdown-item drop" href="#"><i class="bi bi-person"></i>Account</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
         
             <div class="container">
                 <div class="brand">
@@ -70,8 +70,8 @@
                                     <div class="tab-content"><!--tab content start-->
                                         <div id="login" class="tab-pane active">
                                             <form action="" class="form-control">
-                                                <label for="username">Username</label>
-                                                <input type="text" class="form-control sign" placeholder="Username" required>
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control sign" placeholder="Username" required>
                                                 <label for="password" class="marg">Password</label>
                                                 <input type="password" class="form-control sign" placeholder="Password" required>
                                                 <input class="form-check-input check" type="checkbox">
@@ -91,12 +91,12 @@
                                         
                                         <div id="SignUp" class="tab-pane fade">
                                             <form action="" class="form-control">
-                                                <label for="username">Username</label>
-                                                <input type="text" class="form-control sign" placeholder="Username" required>
-                                                <label for="email" class="marg">Email</label>
-                                                <input type="email" class="form-control sign" placeholder="Email" required>                                            
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control sign" placeholder="Email" required>
                                                 <label for="password" class="marg">Password</label>
-                                                <input type="password" class="form-control sign" placeholder="Password" required>
+                                                <input type="text" class="form-control sign" placeholder="Password" required>                                            
+                                                <label for="password" class="marg">Confirm Password</label>
+                                                <input type="password" class="form-control sign" placeholder="Confirm Password" required>
                                                 <input class="form-check-input check" type="checkbox">
                                                 <label class="form-check-label check" for="remember-me">
                                                   I agree to the term & condition
@@ -112,15 +112,157 @@
                                             </div>
                                         </div>
                                     </div>
-                                  
-                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Button-->   
+                </div>
+                    <div id="popup-sign" class="modal fade" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn btn-close btn-sm" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <nav class="nav d-flex justify-content-center"><!--nav start-->
+                                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#login">Login</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#SignUp">Sign Up</a></li>
+                                    </nav><!--nav end-->
+                                    <div class="tab-content"><!--tab content start-->
+                                        <div id="login" class="tab-pane active">
+                                            <form action="" class="form-control">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control sign" placeholder="Username" required>
+                                                <label for="password" class="marg">Password</label>
+                                                <input type="password" class="form-control sign" placeholder="Password" required>
+                                                <input class="form-check-input check" type="checkbox">
+                                                <label class="form-check-label check" for="remember-me">
+                                                  Remember Me
+                                                </label>
+                                                <div class="row">
+                                                    <div class="col-sm-12" align="center">
+                                                        <button class="btn submit-color marg">Login</button>
+                                                    </div>
+                                                </div>                                      
+                                            </form>
+                                            <div class="modal-footer d-flex justify-content-center">
+                                                <a href="#">Forgot your username or password?</a> 
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="SignUp" class="tab-pane fade">
+                                            <form action="" class="form-control">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control sign" placeholder="Email" required>
+                                                <label for="password" class="marg">Password</label>
+                                                <input type="text" class="form-control sign" placeholder="Password" required>                                            
+                                                <label for="password" class="marg">Confirm Password</label>
+                                                <input type="password" class="form-control sign" placeholder="Confirm Password" required>
+                                                <input class="form-check-input check" type="checkbox">
+                                                <label class="form-check-label check" for="remember-me">
+                                                  I agree to the term & condition
+                                                </label>
+                                                <div class="row">
+                                                    <div class="col-sm-12" align="center">
+                                                        <button class="btn submit-color marg">Create account</button>
+                                                    </div>
+                                                </div>                                      
+                                            </form>
+                                            <div class="modal-footer d-flex justify-content-center">
+                                                <a href="#">Have an account? Click here</a> 
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--end Button-->
+                    <!--Login only-->
+                    <div id="Signup" class="modal fade" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn btn-close btn-sm" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <nav class="nav d-flex justify-content-center"><!--nav start-->
+                                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#Signupform">Sign Up</a></li>
+                                    </nav><!--nav end-->
+                                    <div class="tab-content"><!--tab content start-->
+                                        <div id="Signupform" class="tab-pane active">
+                                            <form action="" class="form-control">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control sign" placeholder="Email" required>
+                                                <label for="password" class="marg">Password</label>
+                                                <input type="text" class="form-control sign" placeholder="Password" required>                                            
+                                                <label for="password" class="marg">Confirm Password</label>
+                                                <input type="password" class="form-control sign" placeholder="Confirm Password" required>
+                                                <input class="form-check-input check" type="checkbox">
+                                                <label class="form-check-label check" for="remember-me">
+                                                  I agree to the term & condition
+                                                </label>
+                                                <div class="row">
+                                                    <div class="col-sm-12" align="center">
+                                                        <button class="btn submit-color marg">Create account</button>
+                                                    </div>
+                                                </div>                                      
+                                            </form>
+                                            <div class="modal-footer d-flex justify-content-center">
+                                                <a href="#">Have an account? Click here</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end sign un only-->
+                    <!--login only-->
+                    <div id="Loginonly" class="modal fade" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn btn-close btn-sm" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <nav class="nav d-flex justify-content-center"><!--nav start-->
+                                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#loginonly">Login</a></li>
+                                    </nav><!--nav end-->
+                                    <div class="tab-content"><!--tab content start-->
+                                        <div id="loginonly" class="tab-pane active">
+                                            <form action="" class="form-control">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control sign" placeholder="Username" required>
+                                                <label for="password" class="marg">Password</label>
+                                                <input type="password" class="form-control sign" placeholder="Password" required>
+                                                <input class="form-check-input check" type="checkbox">
+                                                <label class="form-check-label check" for="remember-me">
+                                                  Remember Me
+                                                </label>
+                                                <div class="row">
+                                                    <div class="col-sm-12" align="center">
+                                                        <button class="btn submit-color marg">Login</button>
+                                                    </div>
+                                                </div>                                      
+                                            </form>
+                                            <div class="modal-footer d-flex justify-content-center">
+                                                <a href="#">Forgot your username or password?</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--login only-->
+            
+            
+            
+            
+            
+            
                 </div>
-            </div>
 
 
     </div>

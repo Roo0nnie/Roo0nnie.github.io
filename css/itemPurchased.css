@@ -34,11 +34,24 @@ i.bi a {
     text-decoration: none;
     color: #fff;
 }
-.goback button.form-control {
+.goback button.form-control,.apply,.apply-1 {
     font-weight: 500;
     border: 2px solid #212529;
     background: #212529;
     transition: .5s;
+    color: #fff;
+
+}
+.apply {
+    margin-top: 1rem;
+}
+.apply:hover {
+    background: transparent;
+    color: #212529;
+}
+.apply-1:hover {
+    background: transparent;
+    color: #212529;
 }
 .goback button.form-control:hover {
     background: transparent;    
@@ -58,11 +71,46 @@ i.bi a {
     transition: .5s;
 }
 .ckeckout:hover {
-    background:  #C4A159;
-    border: 2px solid  #C4A159;
+    background:  transparent;
 }
 .ckeckout a {
     text-decoration: none;
     color: #fff;
+    font-weight: 600;
+    transition: .5s;
+}
+.ckeckout a:hover{
+    color: #212529;
+}
 
+
+/*modal dialog*/
+.modal-header,.modal-footer {
+    border: none;
+}
+.modal-body,.modal-header,.modal-footer {
+    background: #C4A159;
+}
+.checkout-btn {
+    width: 60%;
+    font-weight: 600;
+    border: 2px solid #212529;
+    color: #fff;
+    background: #212529;
+    transition: all .5s ease;
+}
+.checkout-btn:hover {
+    border: 2px solid #212529;
+    background: #e7e2d6;
+    color: #212529;
+}
+.greet {
+    font-size: 30px;
+    font-weight: 700;
+}
+table {
+    margin-bottom: 3rem;
+}
+.coupon,.card-content {
+    margin-bottom: 1rem;
 }
