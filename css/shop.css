@@ -59,7 +59,7 @@ nav {
 }
 
 /*Dropdown*/
-.dropdown {
+.dropdown-menu1{
     margin-top: -.7rem;
     font-size: 50px;
     color: #212529;
@@ -77,9 +77,9 @@ nav {
     background: #212529;
 }
 /*icon menu*/
-.bi {
+/*.bi {
     margin-right: 10px;
-}
+} */
 .container-box.item {
     width: 100%;
     height: auto;
@@ -89,6 +89,7 @@ nav {
 .search-cat {
     margin-right: 1rem;
 }
+
 button.btn.position-relative{
     margin-left: 1rem;
 }
