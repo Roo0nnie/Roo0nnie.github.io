@@ -22,65 +22,46 @@
     display: flex;
     padding: 1rem 3rem;
 }
-i.bi {
-    margin-left: 1rem;
-    font-size: 25px;
-    color: #212529;
-}
-i.bi a {
-    text-decoration: none;
-}
 .goback button.form-control a {
     text-decoration: none;
     color: #fff;
 }
-.goback button.form-control,.apply,.apply-1 {
+.goback button.form-control {
     font-weight: 500;
     border: 2px solid #212529;
     background: #212529;
     transition: .5s;
     color: #fff;
-
-}
-.apply {
-    margin-top: 1rem;
-}
-.apply:hover {
-    background: transparent;
-    color: #212529;
-}
-.apply-1:hover {
-    background: transparent;
-    color: #212529;
 }
 .goback button.form-control:hover {
     background: transparent;    
 }
-.subtotal {
-    font-weight: 700;
+.name {
+    margin-top: 2rem;
 }
-.card-content {
-    font-weight: 700;
-    margin-bottom: .5rem;
+section {
+    background: #e7e2d6;
+    height: 100vh;
 }
-.ckeckout {
-    margin-top: 1rem;
-    width: 100px;
-    background: #212529;
-    border: 2px solid #212529;
-    transition: .5s;
-}
-.ckeckout:hover {
-    background:  transparent;
-}
-.ckeckout a {
-    text-decoration: none;
-    color: #fff;
+.label {
+    font-size: 22px;
     font-weight: 600;
-    transition: .5s;
-}
-.ckeckout a:hover{
     color: #212529;
+}
+textarea,.input-group,select,.margin {
+    margin: .5rem;
+    border: 2px solid #212529;
+}
+.submit {
+    margin: 2rem 0rem;
+    border: 2px solid #212529;
+    font-size: 20px;
+    font-weight:700;
+    background: #212529;
+    color: #fff;
+}
+.submit:hover {
+    border: 2px solid #212529; 
 }
 /*modal dialog*/
 .modal-header,.modal-footer {
@@ -106,9 +87,6 @@ i.bi a {
     font-size: 30px;
     font-weight: 700;
 }
-table {
-    margin-bottom: 3rem;
-}
-.coupon,.card-content {
-    margin-bottom: 1rem;
+.col-sm-12 a {
+    text-decoration: none;
 }

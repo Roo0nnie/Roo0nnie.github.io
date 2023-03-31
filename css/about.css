@@ -71,6 +71,7 @@ img.photo {
     margin-top: 7rem;
 }
 .owner-description {
+    width: 400px;
     margin-top: 1rem;
     letter-spacing: 1px;
     padding-top: .8rem;
@@ -80,7 +81,7 @@ img.photo {
     border: 2px solid #C4A159;
 }
 section {
-    background: #C4A159;
+    background:  #e7e2d6;
     padding: 2rem 0;
     min-height: 50vh;
 }
@@ -91,14 +92,16 @@ section {
 }
 .nav.nav.nav-tabs {
     color: #212529;
+    background:  #C4A159;
 }
 a.nav-link {
     color:  #212529;
     transition: all .5s;
+    background:  #C4A159;
 }
 a.nav-link:hover{
     color:  #212529;
-    background: #e7e2d6;
+    background:  #C4A159;
 }
 .nav-tabs {
     background: transparent;
@@ -122,7 +125,7 @@ a.nav-link:hover{
     font-size: 40px;
     font-weight: 600;
     color: #212529;
-    border-right: 3px solid #212529;
+
 }
 .col-sm-6 {
     margin-top: 1rem;
@@ -161,12 +164,12 @@ button.btn-primary:hover {
 .bi-arrow-right {
     color: #fff;
 } 
-i {
+i.locate {
     margin: 0 .5rem;
     font-size: 22px;
     color: #212529;
 }
-i:hover {
+i.locate:hover {
     color: #fff;
 }
 .nav-link ul li.active i{
@@ -177,6 +180,7 @@ i:hover {
     height: 50vh;
     position: relative;
     overflow: hidden;
+
 }
 .photo-box img {
     position: absolute;
@@ -189,67 +193,140 @@ i:hover {
 .img {
     position: relative;
     width: 100%;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .5);
 }
 .img img {
     width: 100%;
     height: 450px;
-}
-footer {
-    background: #212529;
-    min-height: 50vh;
-    width: 100%;
-}
-.footer-end {
-    min-height: 50vh;
-    background: #212529;
-    font-weight: 200;
-}
-.footer-box {
-    padding: 3rem;
-}
-.footer-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-}
-.footer-content h5 {
-    text-transform: uppercase;
-    line-height: 2rem;
-    margin-top: 2.5rem;
-    text-align: center;
-}
-span {
-    height: 2px;
-    width: 60%;
-    background: white;
-    margin-top: 2rem;
-}
-a {
-    color: #C4A159;
-}
-.footer-link li {
-    display: inline-block;
-    margin: 2rem;
 
 }
-.footer-link ul {
-    list-style: none;
-}
-.footer-link ul li a {
-    text-decoration: none;
-    color: #C4A159;
-}
-.footer-icon {
-    margin-top: .5rem;
-    color: #C4A159;
-}
-.footer-content p {
-    width: 60ch;
+
+/*Term & condition*/
+.customer-review {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
     text-align: center;
-    width: 50ch;
 }
+
+.container-table {
+    width: 100%;
+    background:  #C4A159;
+    height: auto;
+}
+.table-box {
+    width: 300px;
+    margin: 1.5rem;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, .3);
+    background: #e7e2d6;
+    padding: 1rem;
+    min-height: 300px;
+}
+.table-box-container {
+    display: flex;
+    justify-content: space-between;
+}
+.customer-review {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    text-align: center;
+}
+.customer-review span {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #212529;  
+}
+.comment {
+    padding-top: .7rem;
+    font-size: 12px;
+}
+.circle-policy {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #212529;
+    margin-bottom: 1rem;
+}
+i.policy {
+    position: absolute;
+    top: 0;
+    left: 1.2rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+} 
+.center-icon {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*footer*/
+footer {
+    min-height: 30vh;
+    background: #212529;
+}
+.content-footer {
+    margin-top: 3rem;
+    color: #e7e2d6;
+    text-align: center;
+}
+.content-footer h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.content-footer p {
+    font-size: 13px;
+}
+.content-offer {
+    color: #B29457;
+}
+.content-input {
+    margin-top: 5rem;
+}
+.form-control {
+    border: #B29457;
+    height: 3rem;
+}
+button.form-control {
+    width: 20%;
+    margin-left: 1rem;
+    border: 2px solid #B29457;
+    color: #212529;
+    font-weight: 500;
+    background: #B29457;
+    transition: .5s;
+}
+button.form-control:hover {
+    color: #fff;
+    background: #212529;
+}
+/*Last Footer*/
+.last {
+    min-height: 45vh;
+    background: #e7e2d6;
+    padding-top: 2rem;
+}
+.last h5 {
+    color:  #212529;
+}
+.last p {
+    font-size: 13px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: #212529;
+}
+.color {
+    color: #C4A159;
+    font-weight: 700;
+} 
+
+
+
 @media (max-width:768px) {
     .nav-list {
         display: none;

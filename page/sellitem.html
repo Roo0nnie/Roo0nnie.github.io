@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/sellitem.css">
+
+    <!--cdn icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Coffee Canvas: An Artistic Coffee Painting (Buy & Sell)</title>
+</head>
+<body>
+    <div class="mycart">
+        <div class="mycart-content">
+            <div class="purchased">#SellYourProduct</div>
+            <div class="goback">
+                <button type="button" class="form-control"><a href="/index.html">Home</a></button>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+                <form action="/index.html" method="post">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="name" class="name label">Name</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control margin" placeholder="First" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control margin" placeholder="Last" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control margin" placeholder="Age" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control margin" placeholder="Status" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label for="email" class="email label">Email</label>
+                                <input type="email" class="form-control margin" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label for="address" class="address label">Address</label>
+                                <input type="text" class="form-control margin" placeholder="Street Address" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control margin" placeholder="Street Address Line 2">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control margin" placeholder="City" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control margin" placeholder="Region" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control margin" placeholder="Postal/Zip Code" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="form-select margin" required>
+                                    <option selected>Country</option>
+                                    <option value="1">Philippines</option>
+                                    <option value="2">India</option>
+                                    <option value="3">America</option>
+                                    <option value="4">Indonesia</option>
+                                    <option value="5">Korea</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="name" class="name label">Your Art Here!</label>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input margin" type="checkbox" value="">
+                                    <label class="form-check-label" for="Paintings">Paintings</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input margin" type="checkbox" value="">
+                                    <label class="form-check-label" for="inlineCheckbox2">Paintmaking</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input margin" type="checkbox" value="">
+                                    <label class="form-check-label" for="inlineCheckbox2">Drawing</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input margin" type="checkbox" value="">
+                                    <label class="form-check-label" for="inlineCheckbox2">Art w/frame</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <textarea name="" id="" cols="70" rows="5" class="form-control margin">Your art specification..</textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <input type="file" class="form-control">
+                                    <label class="input-group-text" for="file" required>Upload</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control margin" placeholder="title" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <textarea name="" id="" cols="70" rows="5" class="form-control margin">Your comments here..</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <button type="button" class="btn submit" style="width: 10rem;" data-bs-toggle="modal" data-bs-target="#submit">Submit</button>
+                            <div id="submit" class="modal fade" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn btn-close btn-sm" data-bs-dismiss="modal"></button>
+                                        </div>
+                                            <div class="modal-body">
+                                                <div class="tab-content">
+                                                    <div id="checkout" class="tab-pane active">
+                                                        <div class="content greet" align="center">Thank You For Trusting Us!</div>
+                                                        <p align="center" class="greet2">You successfully send your request.</p>
+                                                        <div class="row">
+                                                            <div class="col-sm-12" align="center">
+                                                                <a href="/index.html"><button type="button" class="form-control checkout-btn" data-bs-dismiss="modal" >OK</button></a>
+                                                            </div>
+                                                        </div>                                                   
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="modal-footer"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                </form>
+            
+        </div>
+    </section>
+    
+
+</body>
+
+</html>
