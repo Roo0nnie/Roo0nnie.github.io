@@ -27,11 +27,21 @@
                 <div class="nav-list">
                     <div class="nav-link">
                         <ul>
-                            <li><a href="/index.html">HOME</a></li>
-                            <li><a href="/page/shop-page.html">SHOP</a></li>
-                            <li><a href="/page/about.html">ABOUT</a></li>
-                            <li class="active"><a href="/page/contact.html">CONTACT</a></li>
-                        </ul>  
+                            <li class="home"><a href="/index.html" class="home-a">HOME</a></li>
+                            <li class="home"><a href="/page/shop-page.html" class="home-a">SHOP</a></li>
+                            <li class="home"><a href="/page/about.html" class="home-a">ABOUT</a></li>
+                            <li class="home active"><a href="#" class="home-a">CONTACT</a></li>
+                        </ul>
+                        <div class="dropdown">
+                            <i class="bi bi-list" data-bs-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item drop" href="/page/shop-page.html"><i class="bi bi-cart-plus"></i></i>Buy item</i></a></li>
+                              <li><a class="dropdown-item drop" href="/page/sellitem.html"><i class="bi bi-basket"></i>Sell item</a></li>
+                              <li><a class="dropdown-item drop" href="#" data-bs-toggle="modal" data-bs-target="#Signup"><i class="bi bi-plus-square"></i>Sign Up</a></li>
+                              <li><a class="dropdown-item drop" href="#" data-bs-toggle="modal" data-bs-target="#Loginonly"><i class="bi bi-box-arrow-in-right"></i>Login</a></li>
+                              <li><a class="dropdown-item drop" href="#"><i class="bi bi-person"></i>Account</a></li>
+                            </ul>
+                        </div>  
                     </div>
                 </div>
             </nav> <!--nav end-->

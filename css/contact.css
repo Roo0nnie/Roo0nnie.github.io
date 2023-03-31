@@ -21,8 +21,8 @@
     height: 120%;
 }
 nav {
-    top: 0;
     position: absolute;
+    top: 0;
     display: flex;
     justify-content: space-between;
     height: 10vh;
@@ -74,6 +74,29 @@ nav {
     text-decoration: none;
     padding: 20px;
     color: #fff;
+}
+
+/*Dropdown*/
+.dropdown {
+    margin-top: -.7rem;
+    font-size: 50px;
+    color: #212529;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+.dropdown-toggle {
+    border: 2px solid #212529;
+    background: transparent;
+    border-radius: 10px;
+}
+.dropdown-toggle:hover {
+    color: #fff;
+    border: 2px solid #212529;
+    background: #212529;
+}
+/*icon menu*/
+.bi {
+    margin-right: 10px;
 }
 .content {
     text-align:center;
